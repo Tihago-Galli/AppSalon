@@ -1,0 +1,45 @@
+@use '../base/variable' as v;
+@use '../base/mixins' as m;
+
+.contenedor-app{
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 100vh;
+    }
+    
+}
+
+.imagen{
+    height: 25rem;
+    background-image: url(../img/1.jpg);
+    background-position: center center;
+    background-size: cover;
+    @include m.tablet {
+        height: auto;
+    }
+}
+
+.app{
+    margin: 0 auto;
+    width: 95%;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.nombre__app{
+    font-weight: 700;
+    margin: 5rem 0;
+}
+
+.descripcion__app{
+
+    p{
+        margin: .5rem;
+
+        &:last-child{
+            margin-bottom: v.$separacion;
+        }
+    }
+
+}

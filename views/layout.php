@@ -6,10 +6,16 @@
     <title>App Salón</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="icon" type="image" href="/build/img/salon.png">
 </head>
 <body>
-
-    <?php echo $contenido; ?>
+    <div class="contenedor-app">
+        <div class="imagen"></div>
+        <div class="app">
+        <?php echo $contenido; ?>
+        </div>
+    </div>
+    
             
 </body>
 </html>

@@ -1,0 +1,2 @@
+@media (min-width:768px){.contenedor-app{display:grid;grid-template-columns:repeat(2,1fr);min-height:100vh}}.imagen{height:25rem;background-image:url(../img/1.jpg);background-position:50%;background-size:cover}@media (min-width:768px){.imagen{height:auto}}.app{margin:0 auto;width:95%;padding:3rem 0;text-align:center}.nombre__app{font-weight:700;margin:5rem 0}.descripcion__app p{margin:.5rem}.descripcion__app p:last-child{margin-bottom:5rem}
+/*# sourceMappingURL=inicio.css.map */
