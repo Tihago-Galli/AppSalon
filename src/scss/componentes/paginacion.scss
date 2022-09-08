@@ -1,0 +1,20 @@
+@use '../base/variable' as v;
+@use '../base/mixins' as m;
+
+.paginacion{
+    @include m.tablet {
+        display: flex;
+    justify-content: space-between;
+    }
+
+    button{
+        margin: 0 0 1rem 0;
+        border: none;
+        border-radius: 1rem;
+    }
+
+    .ocultar{
+        visibility: hidden;
+    }
+    
+}

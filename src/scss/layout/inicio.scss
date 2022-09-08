@@ -24,7 +24,7 @@
     margin: 0 auto;
     width: 95%;
     padding: 3rem 0;
-    text-align: center;
+    
 }
 
 .nombre__app{
@@ -42,4 +42,21 @@
         }
     }
 
+}
+
+.barra{
+
+    border-bottom: 3px solid v.$azul;
+    margin-bottom: 4rem;
+    @include m.tablet {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .boton{
+        @include m.boton(v.$negro, v.$blanco); 
+            
+        
+    }
 }

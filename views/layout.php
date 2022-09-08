@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="build/css/app.css">
     <link rel="icon" type="image" href="/build/img/salon.png">
 </head>
+
+<?php
+        echo $script ?? ''
+?>
 <body>
     <div class="contenedor-app">
         <div class="imagen"></div>

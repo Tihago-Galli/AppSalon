@@ -1,7 +1,7 @@
 <h1 class="nombre__app">Crear Cuenta</h1>
 
 <div class="descripcion__app">
-<p>Ingresa tus datos para crear una cuenta</p>
+<p>Crea tu cuenta en AppSalon</p>
 </div>
 
 <?php 

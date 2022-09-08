@@ -79,6 +79,39 @@ public function validarCorreo(){
 
  return $resultado;
 }
+
+public function validarLogin(){
+   if(!$this->email){
+        
+      self::$alertas['error'][] = "Debes ingrasar el Email";
+   }
+   if(!$this->password){
+       
+      self::$alertas['error'][] = "Debes ingrasar la contraseña";
+   }
+
+   return self::$alertas;
+}
+
+public function validarEmail(){
+   if(!$this->email){
+        
+      self::$alertas['error'][] = "Debes ingrasar un Email";
+   }
+   return self::$alertas;
+}
+
+public function validarPassword(){
+   if(!$this->password){
+        
+      self::$alertas['error'][] = "Debes ingrasar una Contraseña";
+   }if($this->password < 8){
+      self::$alertas['error'][] = "La contraseña debe tener al menos 8 caracteres";
+   }
+
+   return self::$alertas;
+}
+
 //Hashear password
 public function hashPassword(){
    $this->password = password_hash($this->password, PASSWORD_BCRYPT);
@@ -86,6 +119,18 @@ public function hashPassword(){
 
 public function crearToken(){
    $this->token = uniqid();
+}
+
+public function validarPasswordAndVerificar($password){
+
+   $resultado = password_verify($password, $this->password);
+
+   if(!$resultado){
+      self::$alertas['error'][] = "Contraseña incorrecta ";
+   }if(!$this->confirmado){
+      self::$alertas['error'][] = "Usuario no confirmado";
+   };
+   return true;
 }
 
 

@@ -3,3 +3,5 @@
 <div class="descripcion__app">
 <p>Hemos enviado un email a tu correo para que puedas confirmar tu cuenta</p>
 </div>
+
+<a class="boton" href="/">Volver al inicio</a>

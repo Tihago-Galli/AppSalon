@@ -1,10 +1,17 @@
-<h1 class="nombre__app">Login</h1>
+<h1 class="nombre__app">Bienvenido a AppSalon</h1>
 
 <div class="descripcion__app">
-<p>Inicia sesion</p>
-<p>O</p>
-<p>Crea una cuenta si aun no estas registrado</p>
+
+<p>Inicia sesion para reservar una cita</p>
+
 </div>
+
+<?php 
+
+include_once __DIR__ . '/../templates/alertas.php';
+
+?>
+
 <form class="formulario" method="POST" action="/">
     <div class="campo">
         <label for="email">Email</label>

@@ -6,3 +6,25 @@
     border-radius: 1rem;   
     
 }
+
+.boton-seccion{
+    background-color: v.$azul;
+    color: v.$blanco;
+    padding: 1.5rem 2rem;
+    transition:background-color 300ms ease;
+   
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    text-transform: uppercase;
+    &:hover{
+        cursor: pointer;
+        background-color: darken(v.$azul, 30%)
+    }
+
+
+}
+
+.btn-paginacion{
+ width: fit-content;
+}

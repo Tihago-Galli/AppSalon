@@ -3,6 +3,13 @@
 <div class="descripcion__app">
 <p>Ingresa tu correo electronico para enviarte un email de recuperacion</p>
 </div>
+
+<?php 
+
+include_once __DIR__ . '/../templates/alertas.php';
+
+?>
+
 <form class="formulario" method="POST" action="/olvide">
     <div class="campo">
         <label for="email">Email</label>

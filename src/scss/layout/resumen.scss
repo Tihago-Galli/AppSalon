@@ -1,0 +1,29 @@
+@use '../base/variable' as v;
+
+
+.contenedor-resumen{
+
+    p{
+        color: v.$blanco;
+
+    }
+
+    span{
+        color: v.$azul;
+        font-weight: bold;
+    }
+
+    h3{
+        margin-top: v.$separacion;
+    }
+}
+
+.contenedor-servicio{
+
+    border-bottom: 1px solid v.$gris;
+    padding: 3rem 0;
+
+    &:last-of-type{
+        margin-bottom: v.$separacion;
+    }
+}

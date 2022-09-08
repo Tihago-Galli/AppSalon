@@ -141,7 +141,10 @@ class ActiveRecord {
         $query .= join("', '", array_values($atributos));
         $query .= " ') ";
 
+        //con este codigo podedmos retornar el query para saber si hay algun problema en la DB
+        //return json_encode(['query' => $query]);
 
+ 
         // Resultado de la consulta
         $resultado = self::$db->query($query);
         return [
